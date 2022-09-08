@@ -1,3 +1,4 @@
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -6,20 +7,245 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #f2f2f2;
+
   /* выше установили ограничения для секции */
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place_header{
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 2;
+}
+
+.header__title{
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  align-self: center;
+  padding-left: 64px;
+  margin: 0;
+}
+
+.header__subtitle{
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  z-index: 2;
+  margin: 0;
+}
+
+.header__link {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  z-index: 0;
+}
+
+.header__main-illustration{
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.description {
+  margin-top: 100px;
+}
+
+.two-columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+.two-columns__brief{
+  color: #2f80ed;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.two-columns__paragraph{
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 34px 0;
+}
+
+.two-columns__main-text{
+  width: 80%;
+  min-height: 100px;
+}
+.digits {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  margin: 100px auto 20px;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;   
+}
+
+.section-subtitle {
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.table {
+  width: 1100px;
+  margin:0 auto 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type:none 
+}
+
+.table__heading {
+  line-height: 1.15;  
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.feynman {
+  background-size: 867px 637px;
+  background-repeat: no-repeat;
+  background-image: url('../images/feynman.png');
+  background-position: bottom left;  
+  height: 790px;
+  display: flex;
+  background-color: #f2f2f2;
+  flex-direction: column;
+  position: relative;  
+}
+
+.feynman__title {
+  width: 648px;
+  margin: 0 auto;
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: 600;
+  z-index: 1;
+  text-align: center; 
+}
+
+.feynman__subtitle {
+  margin: 70px auto 0;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  z-index: 2; 
+}
+
+.feynman__link {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  text-decoration: none;
+  color: #2f80ed;
+  display: inline-block;
+  z-index: 0;
+}
+ 
+ .table_theme_dark {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+  margin: 0 auto 90px;
+}
+
+.kaufman{
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  justify-content: center;
+}
+
+.section-title_theme_dark{
+  margin: 90px auto 0;
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+  z-index: 3;
+}
+
+.section-subtitle_theme_dark{
+  color: #fff;
+  margin: 20px auto 0;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -29,3 +255,116 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+
+.kaufman__trian {
+  background-image: url('/images/kaufman-triangle.svg');
+  background-size: auto;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  z-index: -1;
+}
+
+.footer {
+  display: flex;
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.footer__columns {
+  display: flex;
+  width: 90%;
+  margin: 60px auto 40px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+
+.footer__author {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+.logo_place_footer {    
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer__column_content_copiright {
+  flex-basis: 711px;
+  position: relative;
+}
+
+.footer__author {
+  position: absolute;
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_content_info {  
+  margin-left:0;
+  justify-content: space-between;
+}
+
+.footer__logo-image {
+  width: 183px;
+  height: 35px;
+}
+
+.footer__column-heading {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.footer__links {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__column-links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer__column-links-items {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.footer__column-link {
+  margin: 0 0 10px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_content_social {  
+  margin-right: 0;
+  right:0;
+}
+
+.footer__social-icons {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+
+
