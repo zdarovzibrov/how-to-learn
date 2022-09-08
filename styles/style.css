@@ -280,13 +280,13 @@
   width: 90%;
   margin: 0 auto;
   justify-content: space-between;  
+  padding: 0 60px 0 40px;
 }
 
 
 .footer__author {
   position: absolute;
   bottom: 18px;
-  left: 0;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
@@ -303,13 +303,6 @@
   position: relative;
 }
 
-.footer__author {
-  position: absolute;
-  margin: 18px 0;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-}
 
 .footer__column_content_info {  
   margin-left:0;
