@@ -256,7 +256,6 @@
   margin-top: 80px;
 }
 
-
 .kaufman__trian {
   background-image: url('/images/kaufman-triangle.svg');
   background-size: auto;
@@ -279,10 +278,9 @@
   display: flex;
   width: 90%;
   margin: 0 auto;
-  justify-content: space-between;  
+  justify-content: space-between;
   padding: 0 60px 0 40px;
 }
-
 
 .footer__author {
   position: absolute;
