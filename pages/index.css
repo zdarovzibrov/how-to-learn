@@ -57,7 +57,7 @@
 @import url(../blocks/resources/__logo/resources__logo.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
-@import url(../blocks/footer/__columns/__column_content-copyright/footer__column_content_copyright.css);
+@import url(../blocks/footer/__columns/__column_content-copyright/footer__column_content-copyright.css);
 @import url(../blocks/footer/__author/footer__author.css);
 @import url(../blocks/footer/column-heading/footer__column-heading.css);
 @import url(../blocks/footer/column-link/footer__column-link.css);
