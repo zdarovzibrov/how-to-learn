@@ -9,3 +9,6 @@
 .table__text:nth-last-child(3) {
   margin-right: 0;
 }
+.table__text:last-child{
+  margin-bottom: 0;
+}

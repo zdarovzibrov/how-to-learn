@@ -5,6 +5,5 @@
   display: flex;
   position: relative;
   background: #f2f2f2;
-
-  /* выше установили ограничения для секции */
+  overflow: hidden;
 }
